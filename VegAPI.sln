@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VegAPI", "VegAPI\VegAPI.csproj", "{02949D39-FF1D-42E5-9EB9-2FBF7F434957}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{412FAD5B-CF13-4A5A-9C60-518D7B4CECA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VegAPI.Entities", "VegAPI.Entities\VegAPI.Entities.csproj", "{0877FDF5-9CC3-4E56-AB0A-FE99683A2795}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02949D39-FF1D-42E5-9EB9-2FBF7F434957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02949D39-FF1D-42E5-9EB9-2FBF7F434957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02949D39-FF1D-42E5-9EB9-2FBF7F434957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02949D39-FF1D-42E5-9EB9-2FBF7F434957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0877FDF5-9CC3-4E56-AB0A-FE99683A2795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0877FDF5-9CC3-4E56-AB0A-FE99683A2795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0877FDF5-9CC3-4E56-AB0A-FE99683A2795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0877FDF5-9CC3-4E56-AB0A-FE99683A2795}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0877FDF5-9CC3-4E56-AB0A-FE99683A2795} = {412FAD5B-CF13-4A5A-9C60-518D7B4CECA2}
+	EndGlobalSection
+EndGlobal
