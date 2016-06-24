@@ -1,4 +1,5 @@
 var express = require('express');
+var food = require('./routes/food.js');
 
 
 app = express();	
@@ -23,6 +24,8 @@ app.get('/andrew*bowers', function(req, res) {
    console.log("Got a GET request for /andrew*bowers with a wildcard");
    res.send('Page Pattern Match');
 })
+
+app.get('/food', food.findAll);
 
 app.listen(8080, function () {	
 	console.log(__dirname);
