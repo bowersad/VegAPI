@@ -18,6 +18,12 @@ app.get('/process', function (req, res) {
 	res.end(JSON.stringify(response));
 });
 
+// This responds a GET request for abcd, abxcd, ab123cd, and so on
+app.get('/andrew*bowers', function(req, res) {   
+   console.log("Got a GET request for /andrew*bowers with a wildcard");
+   res.send('Page Pattern Match');
+})
+
 app.listen(8080, function () {	
 	console.log(__dirname);
 	console.log('listening on port %d', 8080);
