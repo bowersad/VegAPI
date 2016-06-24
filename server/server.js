@@ -2,6 +2,9 @@ var express = require('express');
 
 
 app = express();	
+
+app.use(express.static('/public'));
+
 app.get('/index.htm',function (req, res) {
 	res.sendFile(__dirname + "/index.htm");
 });
