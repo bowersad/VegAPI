@@ -1,5 +1,6 @@
 var express = require('express');
 var food = require('./routes/food.js');
+var service = require('./routes/serviceRequests.js');
 
 
 app = express();	
@@ -26,6 +27,8 @@ app.get('/andrew*bowers', function(req, res) {
 })
 
 app.get('/food', food.findAll);
+
+app.get('/service', service.MakeCall);
 
 app.listen(8080, function () {	
 	console.log(__dirname);
