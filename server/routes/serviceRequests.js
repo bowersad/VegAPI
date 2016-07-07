@@ -14,9 +14,10 @@ exports.MakeCall = function (req, res) {
     console.log('STATUS: ' + res.statusCode);
     console.log('HEADERS: ' + JSON.stringify(res.headers));
     res.setEncoding('utf8');
-    res.on('data', function (chunk) {
-      
-      console.log('BODY: ' + chunk);
+    res.on('data', (d) => {
+      process.stdout.write(d);
     });
+
   }).end();
+  res.send("Complete");  
 }
