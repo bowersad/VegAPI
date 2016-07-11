@@ -1,6 +1,7 @@
 var express = require('express');
 var food = require('./routes/food.js');
 var service = require('./routes/serviceRequests.js');
+var twitter = require('./routes/tweet.js')
 
 
 app = express();	
@@ -27,8 +28,8 @@ app.get('/andrew*bowers', function(req, res) {
 })
 
 app.get('/food', food.findAll);
-
 app.get('/service', service.MakeCall);
+app.get('/twitter', twitter.GetToken);
 
 app.listen(8080, function () {	
 	console.log(__dirname);
