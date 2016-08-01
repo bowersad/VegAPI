@@ -1,5 +1,3 @@
-
-
 var tokenSecret;
 
 exports.GetToken = function (res, req) {
@@ -9,6 +7,7 @@ exports.GetToken = function (res, req) {
 		consumerSecret: 'WyIw3BQsGr3zg9tY5AzDMdKACMnBC7VcgZdnqnO5Ot0HcDveUJ',
 		callback: ''
 	});
+	var tokenSecret;
 
 	twitter.getRequestToken(function (error, requestToken, requestTokenSecret, results) {
 		if (error) {
@@ -16,7 +15,9 @@ exports.GetToken = function (res, req) {
 		} else	{
 			tokenSecret = requestTokenSecret;
 		}
-	})
+	});
+
+	res.send("this");
 }
 
 
