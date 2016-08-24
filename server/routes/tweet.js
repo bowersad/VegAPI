@@ -17,7 +17,20 @@ exports.GetToken = function (req, res) {
 		}
 	});
 
-	res.send("this");
+	twitter.statuses("update", {
+        status: "Hello world!"
+    },
+    accessToken,
+    accessTokenSecret,
+    function(error, data, response) {
+        if (error) {
+            // something went wrong 
+        } else {
+            // data contains the data sent by twitter 
+            res.send(data);
+        }
+    });
+
 }
 
 
