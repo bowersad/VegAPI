@@ -3,12 +3,14 @@ var tokenSecret;
 exports.GetToken = function (req, res) {
 	var twitterAPI = require('node-twitter-api');
 	var twitter = new twitterAPI({
-		consumerKey: 'GJx8RleUiEh2CPgvS1bKIC952',
-		consumerSecret: 'WyIw3BQsGr3zg9tY5AzDMdKACMnBC7VcgZdnqnO5Ot0HcDveUJ',
+		consumerKey: 'h0FFhQAWnecQxc8v1IZtAtqLu',
+		consumerSecret: 'l1jUe20HQM3jnCupDycKOlrUUvS5AulMVedCAH5StE4NR6jwfB',
 		callback: ''
 	});
 	var accessToken;
 	var accessTokenSecret;
+
+	console.log("Getting here");
 
 	twitter.getRequestToken(function (error, requestToken, requestTokenSecret, results) {
 		if (error) {
